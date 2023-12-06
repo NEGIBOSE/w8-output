@@ -62,21 +62,33 @@
         </ul>
       </div>
     </div>
-    <div class="loginform">
-      <h1 class="login-title">Sign in to your account</h1>
+    <div class="loginForm">
+      <h1 class="login-title">
+        <p>あかうんと。</p>
+        <p>にゅうりょくちて</p>
+      </h1>
 
-      <div class="email content">
-        <label for="email">メールアドレス</label>
-        <input type="email" id="js-email" name="email" required />
+      <div class="contents">
+        <div class="email content">
+          <label for="email">めーる</label>
+          <input type="email" id="js-email" name="email" required />
+        </div>
+
+        <div class="password content">
+          <form action="/submit" method="post"></form>
+          <label for="password">あんごー</label>
+          <input type="password" id="js-password" name="password" required />
+        </div>
       </div>
 
-      <div class="password content">
-        <form action="/submit" method="post"></form>
-        <label for="password">パスワード</label>
-        <input type="password" id="js-password" name="password" required />
+      <div class="login">
+        <input class="login-push" type="submit" value="はいる" />
       </div>
 
-      <input type="submit" value="ログイン" />
+      <div class="signUp">
+        <p>まだ、あかうんと。もってない？</p>
+        <a href="#">つくる</a>
+      </div>
     </div>
 
     <script src="./app.js"></script>
