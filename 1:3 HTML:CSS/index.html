@@ -8,56 +8,75 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="big-box">
-      <ul class="container con1">
-        <h1 class="figure">4 x 4</h1>
-        <li class="list">
-          <div class="box box1"></div>
-          <div class="box box2"></div>
-          <div class="box box3"></div>
-          <div class="box box4"></div>
-        </li>
-        <li class="list">
-          <div class="box box1"></div>
-          <div class="box box2"></div>
-          <div class="box box3"></div>
-          <div class="box box4"></div>
-        </li>
-        <li class="list">
-          <div class="box box1"></div>
-          <div class="box box2"></div>
-          <div class="box box3"></div>
-          <div class="box box4"></div>
-        </li>
-        <li class="list">
-          <div class="box box1"></div>
-          <div class="box box2"></div>
-          <div class="box box3"></div>
-          <div class="box box4"></div>
-        </li>
-      </ul>
-      <ul class="container con2">
-        <h1 class="figure">2 x 2</h1>
-        <li class="list">
-          <div class="box box1"></div>
-          <div class="box box2"></div>
-        </li>
-        <li class="list">
-          <div class="box box1"></div>
-          <div class="box box2"></div>
-        </li>
-      </ul>
-      <ul class="container con3">
-        <h1 class="figure">6 x 1</h1>
-        <li class="list">
-          <div class="box box1"></div>
-          <div class="box box2"></div>
-          <div class="box box3"></div>
-          <div class="box box4"></div>
-          <div class="box box5"></div>
-          <div class="box box6"></div>
-        </li>
-      </ul>
+    <div class="grid">
+      <h1 class="grid-title">グリッドレイアウト</h1>
+      <div class="big-box">
+        <ul class="container con1">
+          <h1 class="figure">4 x 4</h1>
+          <li class="list">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+          </li>
+          <li class="list">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+          </li>
+          <li class="list">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+          </li>
+          <li class="list">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+          </li>
+        </ul>
+        <ul class="container con2">
+          <h1 class="figure">2 x 2</h1>
+          <li class="list">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+          </li>
+          <li class="list">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+          </li>
+        </ul>
+        <ul class="container con3">
+          <h1 class="figure">6 x 1</h1>
+          <li class="list">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+            <div class="box box5"></div>
+            <div class="box box6"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="loginform">
+      <h1 class="login-title">Sign in to your account</h1>
+
+      <div class="email content">
+        <label for="email">メールアドレス</label>
+        <input type="email" id="js-email" name="email" required />
+      </div>
+
+      <div class="password content">
+        <form action="/submit" method="post"></form>
+        <label for="password">パスワード</label>
+        <input type="password" id="js-password" name="password" required />
+      </div>
+
+      <input type="submit" value="ログイン" />
     </div>
 
     <script src="./app.js"></script>

@@ -1,6 +1,10 @@
 body {
   background: #eee;
 }
+.grid-title {
+  margin: 20px 0;
+  text-align: center;
+}
 .big-box {
   width: 100%;
   text-align: center;
@@ -50,4 +54,13 @@ body {
 }
 .box6 {
   background-color: #b000dc;
+}
+
+.loginform {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  display: flex;
+  flex-direction: column;
 }
