@@ -96,6 +96,7 @@ body {
 }
 .content input {
   border-radius: 10px;
+  width: 90%;
 }
 .login {
   text-align: center;
