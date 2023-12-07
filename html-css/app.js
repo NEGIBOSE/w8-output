@@ -1,17 +1,15 @@
-function surroundWithPlus(str) {
-  const surroundedStr = "+" + str.split("").join("+") + "+";
-  return (
-    "+" +
-    "-".repeat(surroundedStr.length - 2) +
-    "+\n" +
-    surroundedStr +
-    "\n" +
-    "+" +
-    "-".repeat(surroundedStr.length - 2) +
-    "+"
-  );
-}
+(() => {
+  document.addEventListener("DOMContentLoaded", function () {
+    // ページが読み込まれたときに、localStorageからデータを取得してフォームにセットする
+    const storedEmail = localStorage.getItem("storedEmail");
+    const storedPassword = localStorage.getItem("storedPassword");
 
-const myString = "Paiza";
-const surroundedString = surroundWithPlus(myString);
-console.log(surroundedString);
+    if (storedEmail) {
+      document.getElementById("js-email").value = storedEmail;
+    }
+
+    if (storedPassword) {
+      document.getElementById("js-password").value = storedPassword;
+    }
+  });
+})();
