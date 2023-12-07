@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>w8-output</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="grid">
@@ -77,6 +81,7 @@
             name="email"
             required
             placeholder="ここにめーる、いれて！"
+            autocomplete="on"
           />
         </div>
 
@@ -88,22 +93,23 @@
             name="password"
             required
             placeholder="ここにあんごー、いれて！"
+            autocomplete="on"
           />
+          <span
+            id="buttonEye"
+            class="fa fa-eye"
+            onclick="pushHideButton()"
+          ></span>
         </div>
       </div>
 
       <div class="login">
-        <input
-          class="login-push"
-          type="button"
-          value="はいる"
-          onclick="signIn()"
-        />
+        <input class="login-push" type="button" value="はいる" />
       </div>
 
       <div class="signUp">
         <p class="signText">まだ、あかうんと。もってない？</p>
-        <a href="#">つくる！</a>
+        <a href="#" onclick="signIn()">つくる！</a>
       </div>
     </div>
 
