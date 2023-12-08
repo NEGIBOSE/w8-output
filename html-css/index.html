@@ -72,42 +72,46 @@
         <br />にゅうりょくちて
       </h1>
 
-      <div class="contents">
-        <div class="email content">
-          <label for="email">めーる</label>
-          <input
-            type="email"
-            id="js-email"
-            name="email"
-            required
-            placeholder="ここにめーる、いれて！"
-            autocomplete="on"
-          />
-        </div>
-
-        <div class="password content">
-          <label for="password">あんごー</label>
-          <div class="pass">
+      <form id="js-form">
+        <!-- フォームを囲む -->
+        <div class="contents">
+          <div class="email content">
+            <label for="email">めーる</label>
             <input
-              type="password"
-              id="js-password"
-              name="password"
+              type="email"
+              id="js-email"
+              name="email"
               required
-              placeholder="ここにあんごー、いれて！"
+              placeholder="ここにめーる、いれて！"
               autocomplete="on"
             />
-            <span
-              id="buttonEye"
-              class="fa fa-eye"
-              onclick="pushHideButton()"
-            ></span>
+          </div>
+
+          <div class="password content">
+            <label for="password">あんごー</label>
+            <div class="pass">
+              <input
+                type="password"
+                id="js-password"
+                name="password"
+                required
+                placeholder="ここにあんごー、いれて！"
+                autocomplete="on"
+              />
+              <span
+                id="buttonEye"
+                class="fa fa-eye"
+                onclick="pushHideButton()"
+              ></span>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="login">
-        <input class="login-push" type="button" value="はいる" />
-      </div>
+        <div class="login">
+          <input class="login-push" type="submit" value="はいる" />
+        </div>
+      </form>
+      <!-- フォームを囲む終了 -->
 
       <div class="signUp">
         <p class="signText">まだ、あかうんと。もってない？</p>
